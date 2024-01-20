@@ -1,0 +1,53 @@
+.App {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Black background */
+}
+
+.video-container {
+  width: 600px; /* Width of the video */
+  height: 600px; /* Height of the video */
+  overflow: hidden; /* Hide anything outside this container */
+  position: relative;
+}
+
+#bitbybit {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black; /* Ensure background is black */
+}
+
+.video-visible {
+  opacity: 1;
+}
+
+.video-hidden {
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: #D9EF78;
+  font-size: 24px;
+  text-align: center;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
